@@ -187,6 +187,11 @@ func main() {
 			Usage:  "additional k=v labels",
 			EnvVar: "PLUGIN_CUSTOM_LABELS",
 		},
+		cli.BoolFlag{
+			Name:   "no-default-labels",
+			Usage:  "exclude default build labels",
+			EnvVar: "PLUGIN_NO_DEFAULT_LABELS",
+		},
 		cli.StringSliceFlag{
 			Name:   "label-schema",
 			Usage:  "label-schema labels",
